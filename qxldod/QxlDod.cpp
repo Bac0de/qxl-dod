@@ -4602,7 +4602,7 @@ NTSTATUS  QxlDevice::SetPointerShape(_In_ CONST DXGKARG_SETPOINTERSHAPE* pSetPoi
     PushCursorCmd(cursor_cmd);
     DbgPrint(TRACE_LEVEL_VERBOSE, ("<--- %s\n", __FUNCTION__));
 
-    return STATUS_SUCCESS;
+    return STATUS_NOT_SUPPORTED;
 }
 
 NTSTATUS QxlDevice::SetPointerPosition(_In_ CONST DXGKARG_SETPOINTERPOSITION* pSetPointerPosition)
